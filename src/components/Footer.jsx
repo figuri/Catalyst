@@ -3,9 +3,9 @@ import React from 'react';
 function Footer() {
     return (
         <footer>
-            <div>
-                <p>site under construction: if you have any questions please Contact Sam Thomas . info below.</p>
-                <a href='mailto:bbsmackshack@gmail.com'></a>
+            <div className='CR'>
+                <p>© 2023 Catalyst</p>
+                <img className='logo' src='../pub/images/logo.png' alt='CR' />
             </div>
         </footer>
     );

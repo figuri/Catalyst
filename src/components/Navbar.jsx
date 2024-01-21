@@ -5,14 +5,14 @@ import { Link } from 'react-router-dom';
 function Navbar(props) {
     return (
         <nav>
-            <div>
+            <div className='navLinks'>
                 <Link to='/'>Home</Link>
-                <Link to='/samuel'>Samuel</Link>
-                <Link to='/josiah'>Josiah</Link>
-                <Link to='/caleb'>Caleb</Link>
-                <Link to='/jaelen'>Jaelen</Link>
+                <Link to='/samuel'>Tech</Link>
+                <Link to='/josiah'>Finance</Link>
+                <Link to='/caleb'>News</Link>
+                <Link to='/jaelen'>Diet</Link>
                 <button onClick={() => props.setDarkMode((prevMode) => !prevMode)}>
-                    Toggle {props.darkMode ? "Light" : "Dark"} Mode
+                     {props.darkMode ? "🔅" : "🌙"} 
                 </button>
             </div>
         </nav>

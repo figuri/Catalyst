@@ -1,24 +1,57 @@
 :root {
-    --background-color: #193366;
+    --dark-bg: #193366;
 }
-
+/* navbar */
 .light-mode {
     background-color: #fff;
     color: #000;
 }
 
 .dark-mode {
-    background-color: var(--background-color);
+    background-color: var(--dark-bg);
     color: #fff;
+}
+
+.navLinks {
+    display: block;
+    text-align: center;
+    border-bottom: solid 1px #000;
+}
+
+.navLinks a {
+    list-style: none;
+    padding: 10px 0;
+    margin: 10px;
+    text-decoration: none;
+    color: inherit;
+    font-family: "Titillium Web", sans-serif;
+}
+.navLinks a:hover {
+   font-weight: bold; 
+   font-size: 1.1rem;
+   transition: all 0.3s ease-in-out;
+}
+.navLinks button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-family: "Titillium Web", sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 10px;
+}
+
+.navLinks button:hover {
+    box-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background-color: var(--background-color); */
 }
-
+/* homepage */
 .home {
     height: 100vh;
     display: flex;
@@ -26,4 +59,34 @@ body {
     align-items: center;
     flex-direction: column;
     font-family: 'Titillium Web', sans-serif;
+}
+
+.home-title {
+    font-size: 8rem;
+    margin-bottom: 20px;
+}
+/* footer */
+footer {
+  font-size: 12px;
+}
+
+.CR {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Titillium Web', sans-serif;
+    margin-top: 50px;
+}
+
+.logo {
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
 }
