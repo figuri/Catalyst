@@ -5,7 +5,7 @@ function Samuel () {
     return (
         <div>
             <h1>Tech Talk</h1>
-            <p>Samuel page</p>
+            <p>Add prominent tech topics here</p>
         </div>
     )
 }

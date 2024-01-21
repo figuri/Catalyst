@@ -7,25 +7,21 @@ function sideArticle ({ page }) {
     const [description, setDescription] = useState('')
    
     switch (page) {
-        case 'home':
-            setTitle('Catalyst')
-            setDescription('Change or die')
-            break;
         case 'samuel':
-            setTitle('Samuel')
-            setDescription('Samuel is a cool guy')
+            setTitle('Tech')
+            setDescription('Stay modern with Samuel. Learn new about new software and hardware. Keep up with the latest trends in the tech world.')
             break;
-        case 'tech':
-            setTitle('Tech Talk')
-            setDescription('Tech Talk is a cool guy')
+        case 'josiah':
+            setTitle('Finance')
+            setDescription('Get your money right with Josiah. Learn about investing, saving, and budgeting. Keep up with trends in the stock market and more.')
             break;
-        case 'about':
+        case 'jaelen':
             setTitle('About')
-            setDescription('About is a cool guy')
+            setDescription('Take control of your fitness with Jaelen. Learn about diet, exercise, and maximizing your potenial.')
             break;
-        case 'contact':
-            setTitle('Contact')
-            setDescription('Contact is a cool guy')
+        case 'caleb':
+            setTitle('News')
+            setDescription('Check out current events and happenings with Caleb. Keep up to date with social media, politics, and more.')
             break;
         default:
             setTitle('Catalyst')
