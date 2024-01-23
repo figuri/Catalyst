@@ -1,6 +1,7 @@
 import React from 'react';
+import { useState } from 'react';
 
-function sideArticle ({ page }) {
+function SideArticle ({ page }) {
     // side article will be used to store a short description of each page that it is on,  will use state to change the description based on the page that it is on
   
     const [title, setTitle] = useState('')
@@ -28,6 +29,7 @@ function sideArticle ({ page }) {
             setDescription('Change or die')
             break;
     }
+    
     return (
         <div>
             <h1>{title}</h1>
@@ -36,4 +38,4 @@ function sideArticle ({ page }) {
     )
 }
 
-export default sideArticle;
+export default SideArticle;
